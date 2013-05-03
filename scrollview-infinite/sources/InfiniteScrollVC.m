@@ -36,8 +36,7 @@
 
 -(NSArray*) sliceFromData:(NSArray*)data withRange:(NSRange)range
 {
-    NSArray *array = [data objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:range]];
-    return array;
+    return [data objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:range]];
 }
 
 
@@ -146,7 +145,6 @@
     _visibleDataRange = NSMakeRange(0, numberOfPages);
     _fakePageIndex = 0;
     _realPageIndex = 0;
-    NSLog(@"fake index: %d", _fakePageIndex);
 }
 
 
