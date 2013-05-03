@@ -1,0 +1,5 @@
+export BUILT_PRODUCTS_DIR="/Users/jano/Library/Developer/Xcode/DerivedData/EmptyWithST-evfzedrhnmlmbgfbnspjkrogtrzi/Build/Products/Debug-iphonesimulator"
+export CURRENT_ARCH="i386"
+export OBJECT_FILE_DIR_normal="/Users/jano/Library/Developer/Xcode/DerivedData/EmptyWithST-evfzedrhnmlmbgfbnspjkrogtrzi/Build/Intermediates/EmptyWithST.build/Debug-iphonesimulator/EmptyWithST.build/Objects-normal"
+export OBJROOT="/Users/jano/Library/Developer/Xcode/DerivedData/EmptyWithST-evfzedrhnmlmbgfbnspjkrogtrzi/Build/Intermediates"
+export SRCROOT="/Users/jano/bitbucket/j4n0/templates/EmptyWithST"
