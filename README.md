@@ -1,4 +1,4 @@
-This is a paged infinite scroll using 3 views. The whole code is in the controller [InfiniteScrollVC.m](https://github.com/j4n0/scrollview-infinite/blob/master/scrollview-infinite/sources/InfiniteScrollVC.m).
+This is a **paged infinite scroll using 3 views**. The whole code is in the controller [InfiniteScrollVC.m](https://github.com/j4n0/scrollview-infinite/blob/master/scrollview-infinite/sources/InfiniteScrollVC.m).
 
 The trick is to scroll to the central view after any movement and rewrite the content of the three views. 
 The views have backgrounds red, green, blue to better visualize the trick. 
