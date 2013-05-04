@@ -3,6 +3,11 @@
 
 #import "InfiniteScrollVC.h"
 
+CGRect CGRectSetX(CGRect rect, CGFloat x){
+    return CGRectMake(x, rect.origin.y, rect.size.width, rect.size.height);
+}
+
+
 @implementation InfiniteScrollVC
 {
     UIScrollView *_scrollView;
