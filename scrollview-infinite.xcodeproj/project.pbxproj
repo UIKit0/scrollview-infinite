@@ -12,7 +12,6 @@
 		3A180C731731ED860023127E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C691731ED860023127E /* Icon-Small.png */; };
 		3A180C741731ED860023127E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C6A1731ED860023127E /* Icon-Small@2x.png */; };
 		3A180C771731ED860023127E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C6D1731ED860023127E /* iTunesArtwork */; };
-		3A180C7E1731EDE00023127E /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C7C1731EDE00023127E /* Storyboard-iPad.storyboard */; };
 		3A180C7F1731EDE00023127E /* Storyboard-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C7D1731EDE00023127E /* Storyboard-iPhone.storyboard */; };
 		3A180C831731EEF40023127E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C821731EEF40023127E /* Default.png */; };
 		3A180C851731EF250023127E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C841731EF250023127E /* Default@2x.png */; };
@@ -50,7 +49,6 @@
 		3AE684511733659000301280 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C691731ED860023127E /* Icon-Small.png */; };
 		3AE684521733659000301280 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C6A1731ED860023127E /* Icon-Small@2x.png */; };
 		3AE684531733659000301280 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C6D1731ED860023127E /* iTunesArtwork */; };
-		3AE684541733659000301280 /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C7C1731EDE00023127E /* Storyboard-iPad.storyboard */; };
 		3AE684551733659000301280 /* Storyboard-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C7D1731EDE00023127E /* Storyboard-iPhone.storyboard */; };
 		3AE684561733659000301280 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C821731EEF40023127E /* Default.png */; };
 		3AE684571733659000301280 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A180C841731EF250023127E /* Default@2x.png */; };
@@ -84,7 +82,6 @@
 		3A180C691731ED860023127E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		3A180C6A1731ED860023127E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		3A180C6D1731ED860023127E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
-		3A180C7C1731EDE00023127E /* Storyboard-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Storyboard-iPad.storyboard"; sourceTree = "<group>"; };
 		3A180C7D1731EDE00023127E /* Storyboard-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Storyboard-iPhone.storyboard"; sourceTree = "<group>"; };
 		3A180C821731EEF40023127E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3A180C841731EF250023127E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -112,6 +109,7 @@
 		3A26C9B016B47DE100E7B0B7 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		3A26C9B216B47E4000E7B0B7 /* SampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTest.m; sourceTree = "<group>"; };
 		3A26C9B416B47F6900E7B0B7 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		3A96A66A17348B790053033E /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		3AC4B4301732B86300049E23 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
 		3AC4B4311732B86300049E23 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 		3AC4B4331732D4DF00049E23 /* CGRectFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGRectFunctions.h; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 			children = (
 				3A26C95E16B4785300E7B0B7 /* generic */,
 				3A1AA9D616217133008346B0 /* resources */,
-				3A180C7C1731EDE00023127E /* Storyboard-iPad.storyboard */,
 				3A180C7D1731EDE00023127E /* Storyboard-iPhone.storyboard */,
 				3AC4B4301732B86300049E23 /* UIView+Position.h */,
 				3AC4B4311732B86300049E23 /* UIView+Position.m */,
@@ -245,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				3A180C661731ED860023127E /* icons */,
+				3A96A66A17348B790053033E /* screenshot.png */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -400,7 +398,6 @@
 				3A180C731731ED860023127E /* Icon-Small.png in Resources */,
 				3A180C741731ED860023127E /* Icon-Small@2x.png in Resources */,
 				3A180C771731ED860023127E /* iTunesArtwork in Resources */,
-				3A180C7E1731EDE00023127E /* Storyboard-iPad.storyboard in Resources */,
 				3A180C7F1731EDE00023127E /* Storyboard-iPhone.storyboard in Resources */,
 				3A180C831731EEF40023127E /* Default.png in Resources */,
 				3A180C851731EF250023127E /* Default@2x.png in Resources */,
@@ -432,7 +429,6 @@
 				3AE684511733659000301280 /* Icon-Small.png in Resources */,
 				3AE684521733659000301280 /* Icon-Small@2x.png in Resources */,
 				3AE684531733659000301280 /* iTunesArtwork in Resources */,
-				3AE684541733659000301280 /* Storyboard-iPad.storyboard in Resources */,
 				3AE684551733659000301280 /* Storyboard-iPhone.storyboard in Resources */,
 				3AE684561733659000301280 /* Default.png in Resources */,
 				3AE684571733659000301280 /* Default@2x.png in Resources */,
@@ -569,7 +565,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/scrollview-infinite/targets/release/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "scrollview-infinite";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -582,7 +578,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/scrollview-infinite/targets/release/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "scrollview-infinite";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
