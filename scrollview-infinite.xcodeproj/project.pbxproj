@@ -18,6 +18,7 @@
 		3A26C99D16B47D4D00E7B0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1AA99A16216FB8008346B0 /* UIKit.framework */; };
 		3A26C99E16B47D4D00E7B0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1AA99C16216FB8008346B0 /* Foundation.framework */; };
 		3A26C9B316B47E4000E7B0B7 /* SampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A26C9B216B47E4000E7B0B7 /* SampleTest.m */; };
+		3A55E7871735A92D0021463B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A55E7861735A92D0021463B /* Default-568h@2x.png */; };
 		3AE684441733659000301280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AA9D516217133008346B0 /* AppDelegate.m */; };
 		3AE684471733659000301280 /* InfiniteScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A180C601731ED1C0023127E /* InfiniteScrollVC.m */; };
 		3AE6844B1733659000301280 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1AA99A16216FB8008346B0 /* UIKit.framework */; };
@@ -56,6 +57,7 @@
 		3A26C9B016B47DE100E7B0B7 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		3A26C9B216B47E4000E7B0B7 /* SampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTest.m; sourceTree = "<group>"; };
 		3A26C9B416B47F6900E7B0B7 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		3A55E7861735A92D0021463B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3A96A66A17348B790053033E /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		3AE684641733659000301280 /* scrollview-infinite debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scrollview-infinite debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE684671733690600301280 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		3A1AA98B16216FB8008346B0 = {
 			isa = PBXGroup;
 			children = (
+				3A55E7861735A92D0021463B /* Default-568h@2x.png */,
 				3A1AA9D216217133008346B0 /* scrollview-infinite */,
 				3A1AA99916216FB8008346B0 /* Frameworks */,
 				3A1AA99716216FB8008346B0 /* Products */,
@@ -301,6 +304,7 @@
 			files = (
 				3A1AA9E9162174CF008346B0 /* README.md in Resources */,
 				3A180C7F1731EDE00023127E /* Storyboard-iPhone.storyboard in Resources */,
+				3A55E7871735A92D0021463B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

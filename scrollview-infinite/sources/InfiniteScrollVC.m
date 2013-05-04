@@ -12,7 +12,6 @@ CGRect CGRectSetX(CGRect rect, CGFloat x){
 {
     UIScrollView *_scrollView;
     NSArray *_data;              // array of data to show in the scroll view
-    NSRange _visibleDataRange;   // the elements of the data array that are currently visible in the page views
     NSMutableArray *_pageViews;  // views that simulate infinite scrolling (3 views or less)
     NSUInteger _fakePageIndex;   // scroll view page the user thinks he is in
     NSUInteger _realPageIndex;   // scroll view page the user really is
@@ -24,7 +23,7 @@ CGRect CGRectSetX(CGRect rect, CGFloat x){
 
 -(void) updatePageViews
 {
-    NSArray *data = [self sliceFromData:_data withRange:_visibleDataRange];
+    NSArray *data = [self sliceFromData:_data withRange:NSMakeRange(0,[_pageViews count])];
     [self updatePageViews:_pageViews withData:data];
 }
 
@@ -61,38 +60,42 @@ CGRect CGRectSetX(CGRect rect, CGFloat x){
 #pragma mark - UIScrollViewDelegate
 
 
-- (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+-(void) recenterIfNeeded:(UIScrollView*)scrollView
 {
     NSInteger newPage = (NSUInteger) ceil((scrollView.contentOffset.x - scrollView.frame.size.width/2) / scrollView.frame.size.width);
-    if (newPage<0) return;
+    NSInteger pagesForward = newPage-_realPageIndex;
     
     if (_realPageIndex!=newPage)
     {
         // user scrolled one page, update indexes
-        if (newPage>_realPageIndex)      { _fakePageIndex++; _realPageIndex++; }
-        else if (newPage<_realPageIndex) { _fakePageIndex--; _realPageIndex--; }
-
-        // should recenter?
-        NSUInteger firstPageIndex = 0;
-        NSUInteger lastPageIndex = [_data count]-1;
-        BOOL shouldRecenter = _fakePageIndex!=firstPageIndex && _fakePageIndex!=lastPageIndex;
-
+        _fakePageIndex += pagesForward;
+        _realPageIndex += pagesForward;
+        
+        // recenter if page is not first or last
+        BOOL shouldRecenter = _fakePageIndex!=0 && _fakePageIndex!=[_data count]-1;
         if (shouldRecenter)
         {
             // data range for _fakePageIndex
             NSRange range = NSMakeRange(_fakePageIndex-1, [_pageViews count]);
-
+            
             // update views for the given range
             NSArray *slice = [self sliceFromData:_data withRange:range];
             [self updatePageViews:_pageViews withData:slice];
-
+            
             // recenter
             _realPageIndex = 1;
             [self scroll:scrollView toPage:_realPageIndex];
+            
         } else {
             _realPageIndex = newPage;
         }
     }
+}
+
+
+- (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self recenterIfNeeded:scrollView];
 }
     
 
@@ -113,6 +116,7 @@ CGRect CGRectSetX(CGRect rect, CGFloat x){
     scrollView.bounces = YES;
     scrollView.pagingEnabled = YES;
     scrollView.delegate = self;
+    scrollView.panGestureRecognizer.cancelsTouchesInView = YES;
     
     return scrollView;
 }
@@ -147,7 +151,6 @@ CGRect CGRectSetX(CGRect rect, CGFloat x){
     // globals
     _scrollView = scrollView;
     _pageViews = pageViews;
-    _visibleDataRange = NSMakeRange(0, numberOfPages);
     _fakePageIndex = 0;
     _realPageIndex = 0;
 }
